@@ -1,0 +1,19 @@
+{
+  "data": {
+    "Company": "Vyfido Inc",
+    "Environment": "test",
+    "Server": "WireMock 2.24.1",
+    "Module": [{
+      "Name": "Auditory",
+      "Version": "1.0.10-dev",
+      "Release": "2019-08-10 20:38",
+      "Revition": "git - a00cdf3"
+    },
+    {
+      "Name": "User Management",
+      "Version": "1.5.18-prod",
+      "Release": "2019-08-10 20:38",
+      "Revition": "git - fc031cf"
+    }]
+  }
+}

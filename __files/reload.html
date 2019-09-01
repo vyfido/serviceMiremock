@@ -1,0 +1,38 @@
+<html>
+  <head>
+	<title>Reload mapping</title>
+	<script type="text/javascript" src="lib/js/core/jquery-3.3.1.min.js" ></script>
+	<script type="text/javascript" src="lib/js/core/bootstrap.min.js" ></script>
+	<link rel="stylesheet" type="text/css" href="lib/css/core/bootstrap.min.css" />
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script type="text/javascript">
+
+     function getContext(){	
+	    var context = (""+document.URL).replace("///","//").replace("//","/");
+	    return context.split('/')[0]+'//'+context.split('/')[1];
+      }		
+		
+      $(document).ready(function(){
+		 $('i#reboot').click(function(){
+		   var context = getContext();
+		   var page = context+'/__admin/mappings/reset';
+		   $.ajax({
+			  type: 'POST',
+			  url: page,
+			  success: function(data){
+				 alert('The mappings in server has been reload now.');  
+			  } 
+		   });
+	     });
+	  });
+    </script>	  
+  </head>
+  <body>
+	<div class="container">
+	  <h3>Reload mapping</h3>
+	  
+      This action, can reload the mappings, exits in the application without
+      <b>restart</b> the server. <i class="fa fa-refresh btn btn-danger" id="reboot">&nbsp; reload</i>
+    </div>
+  </body>
+</html>

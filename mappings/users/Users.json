@@ -1,0 +1,85 @@
+{
+ "scenarioName" : "Stage for Users",
+ "mappings": [
+  {
+    "request":{
+       "name" : "update an exists record",
+	   "method" : "PUT",
+	   "urlPath" : "/api/v1/user/update",
+	   "headers":{
+		  "Context-Type":{
+			  "equalTo":"application/json;chartset=utf-8;" 
+		   } 
+	    },
+	    "bodyPatterns":[{
+		  "equalToJson" : "{\"user_name\":\"user\",\"user_pass\":\"hash\",\"user_state\":1,\"user_id\" : 2}"	
+		}]
+     },
+     "response":{
+	    "status" : 200,
+	    "fixedDelayMilliseconds" : 0, 
+	    "bodyFileName" : "./users/update.json",
+	    "headers": {
+		  "Content-Type" : "application/json"
+	    }  
+     }
+  }
+ ,
+  {
+    "request":{
+       "name" : "create a new record in the database",
+	   "method" : "POST",
+	   "urlPath" : "/api/v1/user/create",
+	   "headers":{
+		  "Context-Type":{
+			  "equalTo":"application/json;chartset=utf-8;" 
+		   } 
+	    },
+	    "bodyPatterns":[{
+		  "equalToJson" : "{\"user_name\":\"none\",\"user_pass\":\"hashMd5\",\"user_state\":1}"	
+		}]
+     },
+     "response":{
+	    "status" : 200,
+	    "fixedDelayMilliseconds" : 0, 
+	    "bodyFileName" : "./users/create.json",
+	    "headers": {
+		  "Content-Type" : "application/json;chartset=utf-8;"
+	    }  
+     }
+  }
+ ,
+  {
+    "request":{
+       "name" : "Get the all information users store",
+	   "method" : "GET",
+	   "url" : "/api/v1/user/list"
+     },
+     "response":{
+	    "status" : 200,
+	    "fixedDelayMilliseconds" : 0, 
+	    "bodyFileName" : "./users/list.json",
+	    "headers": {
+		  "Content-Type" : "application/json;chartset=utf-8;"
+	    }  
+     }
+  }
+ ,
+  {
+    "request":{
+       "name" : "Get the information the one user",
+	   "method" : "GET",
+	   "url" : "/api/v1/user/show?id=2"
+     },
+     "response":{
+	    "status" : 200,
+	    "fixedDelayMilliseconds" : 0, 
+	    "bodyFileName" : "./users/show.json",
+	    "headers": {
+		  "Content-Type" : "application/json;chartset=utf-8;"
+	    }  
+     }
+  }
+
+ ]
+}

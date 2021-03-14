@@ -1,0 +1,472 @@
+{
+	"log": {
+		"version": "1.2",
+		"creator": {
+			"name": "Insomnia REST Client",
+			"version": "insomnia.desktop.app:v2021.1.0"
+		},
+		"entries": [
+			{
+				"startedDateTime": "2021-03-14T20:07:34.565Z",
+				"time": 31.717000000000002,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:28080/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/text;charset=utf-8;"
+						},
+						{
+							"name": "Matched-Stub-Id",
+							"value": "9d900bc5-f332-4201-afea-4f9f43f98ef2"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept-Encoding, User-Agent"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"content": {
+						"size": 22,
+						"mimeType": "application/text;charset=utf-8;",
+						"text": "Microservices WireMock"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 31.717000000000002,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Root"
+			},
+			{
+				"startedDateTime": "2021-03-14T20:07:34.565Z",
+				"time": 9.08,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:28080/info",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json;charset=utf-8;"
+						},
+						{
+							"name": "Matched-Stub-Id",
+							"value": "14b42bed-689d-4670-b361-66fde211e349"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept-Encoding, User-Agent"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"content": {
+						"size": 410,
+						"mimeType": "application/json;charset=utf-8;",
+						"text": "{\n  \"data\": {\n    \"Company\": \"Vyfido Inc\",\n    \"Environment\": \"test\",\n    \"Server\": \"WireMock 2.24.1\",\n    \"Module\": [{\n      \"Name\": \"Auditory\",\n      \"Version\": \"1.0.10-dev\",\n      \"Release\": \"2019-08-10 20:38\",\n      \"Revition\": \"git - a00cdf3\"\n    },\n    {\n      \"Name\": \"User Management\",\n      \"Version\": \"1.5.18-prod\",\n      \"Release\": \"2019-08-10 20:38\",\n      \"Revition\": \"git - fc031cf\"\n    }]\n  }\n}\n"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 9.08,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "About"
+			},
+			{
+				"startedDateTime": "2021-03-14T20:07:34.565Z",
+				"time": 13.025,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:28080/uptime",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json;charset=utf-8;"
+						},
+						{
+							"name": "Matched-Stub-Id",
+							"value": "c796d460-d630-4bae-8c23-4eaf68f4a9c4"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept-Encoding, User-Agent"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"content": {
+						"size": 23,
+						"mimeType": "application/json;charset=utf-8;",
+						"text": "{\"uptime\":\"00:00:00\"}\n\n"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 13.025,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Uptime"
+			},
+			{
+				"startedDateTime": "2021-03-14T20:07:34.565Z",
+				"time": 7.933000000000001,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:28080/api/v1/user/update",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Context-Type",
+							"value": "application/json;chartset=utf-8;"
+						}
+					],
+					"queryString": [
+						{
+							"name": "",
+							"value": ""
+						}
+					],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\"user_name\":\"user\",\"user_pass\":\"hash\",\"user_state\":1,\"user_id\":2}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Matched-Stub-Id",
+							"value": "ef6ed7d3-8f60-4c5b-a83d-d3f30a9aff0a"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept-Encoding, User-Agent"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"content": {
+						"size": 58,
+						"mimeType": "application/json",
+						"text": "{ \"message\" : \"the user has been modified successfully\" }\n"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 7.933000000000001,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "User/Update"
+			},
+			{
+				"startedDateTime": "2021-03-14T20:07:34.565Z",
+				"time": 3.213,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:28080/api/v1/user/create",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Context-Type",
+							"value": "application/json;chartset=utf-8;"
+						}
+					],
+					"queryString": [
+						{
+							"name": "",
+							"value": ""
+						}
+					],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\"user_name\":\"none\",\"user_pass\":\"hashMd5\",\"user_state\":1}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json;chartset=utf-8;"
+						},
+						{
+							"name": "Matched-Stub-Id",
+							"value": "0e292645-f89a-42a4-b604-c71a7d6bdc35"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept-Encoding, User-Agent"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"content": {
+						"size": 83,
+						"mimeType": "application/json;chartset=utf-8;",
+						"text": "{ \n  \"message\" : \"the user none has been registered in the platform.\",\n  \"id\" : 2\n}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 3.213,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "User/Create"
+			},
+			{
+				"startedDateTime": "2021-03-14T20:07:34.565Z",
+				"time": 4.930000000000001,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:28080/api/v1/user/show?id=2",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json;chartset=utf-8;"
+						},
+						{
+							"name": "Matched-Stub-Id",
+							"value": "f69c012d-54e6-4325-944f-c94aeb0d4001"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept-Encoding, User-Agent"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"content": {
+						"size": 87,
+						"mimeType": "application/json;chartset=utf-8;",
+						"text": "{\n  \"user_name\" : \"none\",\n  \"user_pass\" : \"hash\",\n  \"user_state\" : 1,\n  \"user_id\" : 0\n}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 4.930000000000001,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "User/Show"
+			},
+			{
+				"startedDateTime": "2021-03-14T20:07:34.565Z",
+				"time": 9.098,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:28080/api/v1/user/list",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json;chartset=utf-8;"
+						},
+						{
+							"name": "Matched-Stub-Id",
+							"value": "975004fd-f087-4295-af9f-a30f63baa5b1"
+						},
+						{
+							"name": "Vary",
+							"value": "Accept-Encoding, User-Agent"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"content": {
+						"size": 300,
+						"mimeType": "application/json;chartset=utf-8;",
+						"text": "{\n \"users\":[{\n  \"user_name\" : \"none\",\n  \"user_pass\" : \"hash\",\n  \"user_state\" : 1,\n  \"user_id\" : 2\n },{\n  \"user_name\" : \"model\",\n  \"user_pass\" : \"joho\",\n  \"user_state\" : 0,\n  \"user_id\" : 1\n },{\n  \"user_name\" : \"code\",\n  \"user_pass\" : \"numerical\",\n  \"user_state\" : 1,\n  \"user_id\" : 3\n }],\n \"total\":3\n} "
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 9.098,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "User/List"
+			}
+		]
+	}
+}

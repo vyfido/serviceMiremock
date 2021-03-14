@@ -1,13 +1,14 @@
 {
-  'request':{
-	 'method' : 'GET',
-	 'url' : '/info'  
+  "request":{
+     "name" : "Additional information about api",
+	 "method" : "GET",
+	 "url" : "/info"  
    },
-   'response':{
-	  'status' : 200,
-	  'bodyFileName' : './about.json',
-	  'headers': {
-		'Content-Type' : 'application/json'  
+   "response":{
+	  "status" : 200,
+	  "bodyFileName" : "./about.json",
+	  "headers": {
+		"Content-Type" : "application/json;charset=utf-8;"  
 	  }  
    }
 }

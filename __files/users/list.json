@@ -1,0 +1,19 @@
+{
+ "users":[{
+  "user_name" : "none",
+  "user_pass" : "hash",
+  "user_state" : 1,
+  "user_id" : 2
+ },{
+  "user_name" : "model",
+  "user_pass" : "joho",
+  "user_state" : 0,
+  "user_id" : 1
+ },{
+  "user_name" : "code",
+  "user_pass" : "numerical",
+  "user_state" : 1,
+  "user_id" : 3
+ }],
+ "total":3
+} 
